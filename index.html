@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modo Caverna</title>
+  <title>Caminhada</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,29 +11,27 @@
 
   <div class="app">
 
-    <h1>🧠 Modo Caverna</h1>
-    <p>Seu controle simples da vida</p>
+    <h1>⛪ Caminhada</h1>
+    <p>Disciplina • Fé • Evolução diária</p>
 
     <div class="card">
-      <h2>💰 Finanças</h2>
-
-      <input id="entrada" placeholder="Entrada (salário)">
-      <input id="gastos" placeholder="Gastos do mês">
-
-      <button onclick="calcular()">Calcular</button>
-
-      <p id="resultado"></p>
+      <h2>💰 Controle de Dívidas</h2>
+      <input id="divida" placeholder="Nome da dívida">
+      <input id="valor" placeholder="Valor">
+      <button onclick="addDivida()">Registrar pagamento</button>
+      <ul id="listaDividas"></ul>
     </div>
 
     <div class="card">
-      <h2>📋 Dívidas</h2>
+      <h2>⏳ Jejum</h2>
+      <button onclick="iniciarJejum()">Iniciar jejum</button>
+      <p id="jejumStatus">Nenhum jejum ativo</p>
+    </div>
 
-      <input id="nome" placeholder="Nome da dívida">
-      <input id="valor" placeholder="Valor">
-
-      <button onclick="add()">Adicionar</button>
-
-      <ul id="lista"></ul>
+    <div class="card">
+      <h2>🧠 Disciplina do Dia</h2>
+      <button onclick="concluirDisciplina()">Marcar concluído</button>
+      <p id="disciplinaStatus">Ainda não concluído</p>
     </div>
 
   </div>
