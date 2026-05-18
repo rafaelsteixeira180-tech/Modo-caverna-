@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modo Caverna</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <h1>🧠 Modo Caverna</h1>
+    <p>Seu controle simples da vida</p>
+
+    <div class="card">
+      <h2>💰 Finanças</h2>
+
+      <input id="entrada" placeholder="Entrada (salário)">
+      <input id="gastos" placeholder="Gastos do mês">
+
+      <button onclick="calcular()">Calcular</button>
+
+      <p id="resultado"></p>
+    </div>
+
+    <div class="card">
+      <h2>📋 Dívidas</h2>
+
+      <input id="nome" placeholder="Nome da dívida">
+      <input id="valor" placeholder="Valor">
+
+      <button onclick="add()">Adicionar</button>
+
+      <ul id="lista"></ul>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
